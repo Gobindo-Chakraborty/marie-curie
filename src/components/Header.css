@@ -1,0 +1,41 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 214px;
+  height: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 13px;
+}
+
+.social-links .icon {
+  height: 20px;
+}
+
+.icon.facebook {
+  width: 11px;
+}
+
+.icon.twitter {
+  width: 24px;
+}
+
+.icon.linkedin {
+  width: 21px;
+}
+
+.icon.instagram {
+  width: 21px;
+}
