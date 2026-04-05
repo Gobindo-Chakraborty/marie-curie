@@ -1,9 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/home/HomePage";
+import ContactPage from "./pages/contact/ContactPage";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Marie Curie</h1>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Routes>
     </>
   );
 }
