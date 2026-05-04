@@ -2,9 +2,6 @@
 
 ![Preview Image](./public/images/curie-preview.jpg)
 
-## [Live Demo](https://marie-curie-lime.vercel.app/)
+## [Live Demo](https://marie-curie.hellogbc.com/)
 
-### For Development
-
-- npm install
-- npm run dev
+React | Tailwind | Nodejs | MongoDB | Vitest
