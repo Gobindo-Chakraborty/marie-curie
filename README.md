@@ -4,4 +4,4 @@
 
 ## [Live Demo](https://marie-curie.hellogbc.com/)
 
-React | Tailwind | Nodejs | MongoDB | Vitest
+React | Tailwind | ExpressJS | MongoDB | Vitest
