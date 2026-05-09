@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #23272e;
-  --color-text-primary: #ffffff;
+  --color-primary-bg: #000000;
+  --color-secondary-bg: #171e15;
+
+  --color-red-bg: #bf5454;
+
+  --color-primary-text: #dbdbdb;
+
+  /* Fonts */
+  --font-primary: "Inter", sans-serif;
 
   /* WIP : Work In Progress */
   --color-wip-text: hsl(225, 25%, 81%);
@@ -11,8 +18,8 @@
 }
 
 [data-theme="light"] {
-  --color-bg-primary: #ffffff;
-  --color-text-primary: #000000;
+  --color-primary-bg: #ffffff;
+  --color-primary-text: #000000;
 
   --color-wip-text: hsl(232, 78%, 21%);
   --color-wip-bg: hsla(218, 35%, 58%, 0.315);
@@ -20,6 +27,8 @@
 }
 
 body {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-text);
+  font-family: var(--font-primary);
+  font-size: 1rem;
 }
