@@ -1,17 +1,27 @@
+import { useState } from "react";
 import ArrowDown from "./icons/ArrowDown";
 import Sun from "./icons/Sun";
 import Moon from "./icons/Moon";
 import Desktop from "./icons/Desktop";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="group relative">
-      <button className="text-[10px] cursor-pointer flex flex-col items-center px-4">
+      <button
+        className="text-[10px] cursor-pointer flex flex-col items-center px-4"
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
         Menu
         <ArrowDown />
       </button>
 
-      <ul className="list-none absolute  font-bold text-xs w-34.75 hidden group-hover:block -left-10">
+      <ul
+        className={`list-none absolute  font-bold text-xs w-34.75 ${open ? "block" : "hidden"} group-hover:block -left-10`}
+      >
         <li className="bg-secondary-bg my-1.5 rounded-[5px] w-full flex justify-center items-center hover:bg-red-bg mt-6">
           <a href="#" className="w-full h-full text-center py-1">
             Home
